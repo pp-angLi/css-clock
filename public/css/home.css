@@ -1,0 +1,138 @@
+html,
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#root,
+#root>div {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --transform-size: 20vw;
+  --point-width: calc(var(--transform-size) / 8);
+  --point-and-circle: calc(var(--transform-size) + var(--point-width));
+  --font-size: 1rem;
+}
+
+.box>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: calc(2 * var(--point-and-circle));
+  height: calc(2 * var(--point-and-circle));
+  border: 1px solid black;
+  border-radius: 50%;
+
+}
+
+.pointer {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+}
+
+.seconde_pointer {
+  width: var(--transform-size);
+  height: 10px;
+  background: red;
+  animation: secondPointer 60s infinite linear;
+}
+
+.minute_pointer {
+  width: var(--transform-size);
+  height: 10px;
+  background: black;
+  animation: minutePointer 3600s infinite linear;
+}
+
+.hour_pointer {
+  width: calc(var(--transform-size) / 2);
+  height: 10px;
+  background: black;
+  animation: hourPointer 43200s infinite linear;
+}
+
+.box>div>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 50%;
+}
+
+.box>div>ul>li {
+  display: inline-block;
+  position: absolute;
+}
+
+.box>div>ul>li:nth-of-type(1) {
+  transform: rotate(30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
+
+.box>div>ul>li:nth-of-type(2) {
+  transform: rotate(60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
+
+.box>div>ul>li:nth-of-type(3) {
+  transform: translate(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(4) {
+  transform: rotate(-60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(5) {
+  transform: rotate(-30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(6) {
+  transform: translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(7) {
+  transform: rotate(30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(8) {
+  transform: rotate(60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
+}
+
+.box>div>ul>li:nth-of-type(9) {
+  transform: translateX(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
+
+.box>div>ul>li:nth-of-type(10) {
+  transform: rotate(calc(-60deg)) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
+
+.box>div>ul>li:nth-of-type(11) {
+  transform: rotate(calc(-30deg)) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
+
+.box>div>ul>li:nth-of-type(12) {
+  transform: translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+}
