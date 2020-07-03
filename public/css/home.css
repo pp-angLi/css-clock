@@ -17,9 +17,6 @@ html {
 }
 
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -29,6 +26,7 @@ html {
   --point-width: calc(var(--transform-size) / 8);
   --point-and-circle: calc(var(--transform-size) + var(--point-width));
   --font-size: 1rem;
+<<<<<<< HEAD
 }
 
 .clock_box {
@@ -135,4 +133,6 @@ html {
 
 .clock_box>ul>li:nth-of-type(12) {
   transform: translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
+=======
+>>>>>>> 018d37fdd3611bac2d3798ed2f32077643aff3de
 }
