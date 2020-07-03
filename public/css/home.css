@@ -31,7 +31,7 @@ html {
   --font-size: 1rem;
 }
 
-.box>div {
+.clock_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ html {
   animation: hourPointer 43200s infinite linear;
 }
 
-.box>div>ul {
+.clock_box>ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,55 +84,55 @@ html {
   border: 50%;
 }
 
-.box>div>ul>li {
+.clock_box>ul>li {
   display: inline-block;
   position: absolute;
 }
 
-.box>div>ul>li:nth-of-type(1) {
+.clock_box>ul>li:nth-of-type(1) {
   transform: rotate(30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }
 
-.box>div>ul>li:nth-of-type(2) {
+.clock_box>ul>li:nth-of-type(2) {
   transform: rotate(60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }
 
-.box>div>ul>li:nth-of-type(3) {
+.clock_box>ul>li:nth-of-type(3) {
   transform: translate(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(4) {
+.clock_box>ul>li:nth-of-type(4) {
   transform: rotate(-60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(5) {
+.clock_box>ul>li:nth-of-type(5) {
   transform: rotate(-30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(6) {
+.clock_box>ul>li:nth-of-type(6) {
   transform: translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(7) {
+.clock_box>ul>li:nth-of-type(7) {
   transform: rotate(30deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(8) {
+.clock_box>ul>li:nth-of-type(8) {
   transform: rotate(60deg) translateY(calc((var(--point-and-circle) - var(--font-size)) * 1));
 }
 
-.box>div>ul>li:nth-of-type(9) {
+.clock_box>ul>li:nth-of-type(9) {
   transform: translateX(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }
 
-.box>div>ul>li:nth-of-type(10) {
+.clock_box>ul>li:nth-of-type(10) {
   transform: rotate(calc(-60deg)) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }
 
-.box>div>ul>li:nth-of-type(11) {
+.clock_box>ul>li:nth-of-type(11) {
   transform: rotate(calc(-30deg)) translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }
 
-.box>div>ul>li:nth-of-type(12) {
+.clock_box>ul>li:nth-of-type(12) {
   transform: translateY(calc((var(--point-and-circle) - var(--font-size)) * -1));
 }

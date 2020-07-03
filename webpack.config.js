@@ -2,6 +2,7 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'development',
   devServer: {
+    // host: '0.0.0.0', // 同网可访问
     port: '8888',
     hot: true,
     contentBase: './public'
